@@ -11,6 +11,8 @@ Improve diagnostic workflow efficiency
 Provide structured patient data management
 Demonstrate integration of intelligent diagnostic logic
 Offer a scalable foundation for future AI-assisted extensions
+
+
 🧠 Key Features
 Patient data entry and management
 Dental condition tracking interface
@@ -20,7 +22,7 @@ Organized modular project architecture
 Expandable system design for future enhancements
 🛠️ Technologies Used
 
-Example (edit if needed to match your stack):
+Example
 
 Java / Kotlin
 Android Studio
@@ -28,8 +30,9 @@ XML (UI Design)
 SQLite / Local Database
 Machine Learning integration (optional/future-ready)
 Git version control
-🏗️ System Architecture
 
+
+🏗️ System Architecture
 The application follows a modular structure:
 
 Smart Dental Diagnosis System
