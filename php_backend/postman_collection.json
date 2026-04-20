@@ -1,0 +1,70 @@
+{
+  "info": {
+    "name": "Dental App PHP API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    { "key": "baseUrl", "value": "http://localhost/dentist/php_backend/api" }
+  ],
+  "item": [
+    {
+      "name": "Register",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Ali Ahmed\",\n  \"phone\": \"07901234567\",\n  \"email\": \"ali@example.com\",\n  \"password\": \"secret12\"\n}"
+        },
+        "url": "{{baseUrl}}/register.php"
+      }
+    },
+    {
+      "name": "Login",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"phone\": \"07901234567\",\n  \"password\": \"secret12\"\n}"
+        },
+        "url": "{{baseUrl}}/login.php"
+      }
+    },
+    {
+      "name": "Create report (multipart)",
+      "request": {
+        "method": "POST",
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            { "key": "user_id", "value": "1", "type": "text" },
+            { "key": "result", "value": "caries", "type": "text" },
+            { "key": "confidence", "value": "0.92", "type": "text" },
+            { "key": "image", "type": "file", "src": "" }
+          ]
+        },
+        "url": "{{baseUrl}}/create_report.php"
+      }
+    },
+    {
+      "name": "Get reports",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/get_reports.php?user_id=1"
+      }
+    },
+    {
+      "name": "Delete report",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"report_id\": 1\n}"
+        },
+        "url": "{{baseUrl}}/delete_report.php"
+      }
+    }
+  ]
+}
