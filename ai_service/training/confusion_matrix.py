@@ -1,6 +1,10 @@
 """
 Generate confusion matrix plot and save to file.
 """
+import lib.clients
+import lib.http_session
+import lib.transport
+import lib.session
 import argparse
 import os
 import sys

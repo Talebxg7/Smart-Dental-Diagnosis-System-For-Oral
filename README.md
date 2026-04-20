@@ -187,4 +187,4 @@ Copy `model.pt` into the AI service root (or set `MODEL_PATH`) for inference.
 =======
 # Smart-Dental-Diagnosis-System-For-Oral
 Smart Dental Diagnosis System is an AI-powered mobile app that analyzes dental images to detect oral diseases such as caries, tartar, and gingivitis. It provides instant results with confidence scores, scan history, and educational insights for better oral health awareness.
->>>>>>> 6766a0d263d94a7f5b61834e4509f408bc8b234d
+
